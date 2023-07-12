@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dart Hub</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="../js/dart.js"></script>
+</head>
+<body>
+    <!-- Bootstrap responsive controller -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://assets.kununu.com/media/prod/profiles/logos/a9f94e70-77ec-4eeb-bfe4-e8c1bd761862_1_63036f36b8caa.gif" alt="..." height="36">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Play</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Support</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <!-- Start Coding the Template here -->
+        <h1>Welcome to your Dart game!</h1>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Info Card</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Welcome to Dart Hub</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Player Card</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Ändere Spieleranzahl</h5>
+                      <p class="card-text">Füge mit einem Klick auf den Button unten ganz einfach einen weiteren Spieler hinzu!</p>
+                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" id="addPlayer" class="btn btn-success">Hinzufügen</button>
+                        <button type="button" id="resetPlayer" class="btn btn-warning">Reset</button>
+                        <button type="button" id="removePlayer" class="btn btn-danger">Entfernen</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <form class="w-100" action="game.html" method="get">
+                    <div class="row" id="playerRow">
+                        <div class="col-12 mb-3">
+                            <label for="rounds" class="form-label">Benötigte Punktzahl</label>
+                            <input type="text" class="form-control" id="rounds" placeholder="501" name="rounds" value="501" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="player1" class="form-label">Spieler 1</label>
+                            <input type="text" class="form-control" id="player1" placeholder="Spielername von Spieler 1" name="player1" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="player2" class="form-label">Spieler 2</label>
+                            <input type="text" class="form-control" id="player2" placeholder="Spielername von Spieler 1" name="player2" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="player3" class="form-label">Spieler 3</label>
+                            <input type="text" class="form-control" id="player3" placeholder="Spielername von Spieler 1" name="player3" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="player4" class="form-label">Spieler 4</label>
+                            <input type="text" class="form-control" id="player4" placeholder="Spielername von Spieler 1" name="player4" required>
+                        </div>
+                    </div>
+                    <input type="number" id="players" name="players" style="display: none;" value="4"></p>
+                    <button type="submit" class="btn btn-primary btn-lg mt-5">Lets Play</button>
+                  </form>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper and JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+</body>
+</html>
